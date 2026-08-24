@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Exposição Minas das Minas</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+
+    <div class="navbar__inner">
+
+      <button
+        class="navbar__brand"
+        type="button"
+        onclick="scrollToSection('inicio')"
+      >
+        <div class="navbar__logo">MdM</div>
+
+        <div class="navbar__brand-text">
+          <span class="navbar__sub">EXPOSIÇÃO</span>
+          <span class="navbar__title">Minas das Minas</span>
+        </div>
+      </button>
+
+      <nav class="navbar__links">
+
+        <button type="button" onclick="scrollToSection('inicio')" class="nav-btn active" data-section="inicio">
+          Início
+        </button>
+
+        <button type="button" onclick="scrollToSection('exposicao')" class="nav-btn" data-section="exposicao">
+          A Exposição na Carreta
+        </button>
+
+        <button type="button" onclick="scrollToSection('agenda')" class="nav-btn" data-section="agenda">
+          Agenda e Cidades
+        </button>
+
+        <button type="button" onclick="scrollToSection('galeria')" class="nav-btn" data-section="galeria">
+          Galeria de Minérios
+        </button>
+
+        <button type="button" onclick="scrollToSection('contato')" class="nav-btn" data-section="contato">
+          Contato/Escolas
+        </button>
+
+        <button type="button" onclick="scrollToSection('sustentabilidade')" class="nav-btn" data-section="sustentabilidade">
+          Sustentabilidade
+        </button>
+
+      </nav>
+
+      <button
+        class="navbar__hamburger"
+        id="hamburger"
+        type="button"
+        onclick="toggleMenu()"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <div class="navbar__mobile" id="mobileMenu">
+
+      <button type="button" onclick="scrollToSection('inicio')">
+        Início
+      </button>
+
+      <button type="button" onclick="scrollToSection('exposicao')">
+        A Exposição na Carreta
+      </button>
+
+      <button type="button" onclick="scrollToSection('agenda')">
+        Agenda e Cidades
+      </button>
+
+      <button type="button" onclick="scrollToSection('galeria')">
+        Galeria de Minérios
+      </button>
+
+      <button type="button" onclick="scrollToSection('contato')">
+        Contato/Escolas
+      </button>
+
+      <button type="button" onclick="scrollToSection('sustentabilidade')">
+        Sustentabilidade
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__inner">
+
+      <div class="hero__content">
+
+        <span class="badge">
+          Exposição Itinerante
+        </span>
+
+        <h1 class="hero__title">
+          MINAS<br>
+          <span class="text-red">DAS</span><br>
+          MINAS
+        </h1>
+
+        <p class="hero__desc">
+          Uma exposição que percorre Minas Gerais levando conhecimento
+          sobre mineração, geologia e sustentabilidade diretamente
+          para a sua cidade.
+        </p>
+
+        <div class="hero__btns">
+
+          <button type="button" class="btn btn--red" onclick="scrollToSection('agenda')">
+            Ver Agenda
+          </button>
+
+          <button type="button" class="btn btn--outline" onclick="scrollToSection('exposicao')">
+            Saiba Mais
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="hero__img-wrap">
+
+        <img
+          src="c:\Users\ALUNO\AppData\Local\Temp\Rar$DIa3212.6202.rartemp\WhatsApp Image 2026-08-19 at 14.56.02 (1).jpeg"
+          alt="Exposição Minas das Minas"
+          class="hero__img"
+        >
+
+        <div class="hero__badge hero__badge--red">
+          <strong>8+</strong>
+          <span>cidades em 2025</span>
+        </div>
+
+        <div class="hero__badge hero__badge--white">
+          <strong>20+</strong>
+          <span>minérios expostos</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <button
+      class="hero__arrow"
+      type="button"
+      onclick="scrollToSection('exposicao')"
+      aria-label="Ir para a exposição"
+    >
+      ↓
+    </button>
+
+  </section>
+
+
+  <!-- ESTATÍSTICAS -->
+  <section class="stats">
+
+    <div class="stats__inner">
+
+      <div class="stats__item">
+        <strong>2025</strong>
+        <span>Ano da Exposição</span>
+      </div>
+
+      <div class="stats__item">
+        <strong>8+</strong>
+        <span>Cidades Visitadas</span>
+      </div>
+
+      <div class="stats__item">
+        <strong>20+</strong>
+        <span>Minérios Expostos</span>
+      </div>
+
+      <div class="stats__item">
+        <strong>Gratuita</strong>
+        <span>Entrada Livre</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EXPOSIÇÃO -->
+  <section id="exposicao" class="section bg-white">
+
+    <div class="container">
+
+      <div class="section__header">
+
+        <span class="badge">
+          A Exposição
+        </span>
+
+        <h2>
+          A Exposição na Carreta
+        </h2>
+
+        <p>
+          Uma experiência única que leva o universo da mineração mineira
+          diretamente para praças e espaços públicos de todo o estado.
+        </p>
+
+      </div>
+
+
+      <div class="two-col">
+
+        <div>
+
+          <img
+            src="c:\Users\ALUNO\AppData\Local\Temp\Rar$DIa3212.14451.rartemp\WhatsApp Image 2026-08-19 at 14.56.03 (1).jpeg"
+            alt="Carreta da Exposição Minas das Minas"
+            class="rounded-img"
+          >
+
+        </div>
+
+
+        <div class="two-col__text">
+
+          <h3>
+            O que é a Exposição?
+          </h3>
+
+          <p>
+            A <strong>Exposição Minas das Minas</strong> é um projeto
+            itinerante que transforma um caminhão especialmente adaptado
+            em um museu móvel sobre mineração.
+          </p>
+
+          <p>
+            Voltado para o público em geral, especialmente estudantes,
+            professores, pesquisadores, turistas e moradores das regiões
+            visitadas.
+          </p>
+
+
+          <div class="features-grid">
+
+            <div class="feature-item">
+              🎓 Educativo e interativo
+            </div>
+
+            <div class="feature-item">
+              🚛 Totalmente itinerante
+            </div>
+
+            <div class="feature-item">
+              🆓 Entrada gratuita
+            </div>
+
+            <div class="feature-item">
+              📍 Espaços públicos
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="cards-row">
+
+        <div class="card">
+
+          <div class="card__icon">
+            🎯
+          </div>
+
+          <h4>
+            Objetivo do Projeto
+          </h4>
+
+          <p>
+            Democratizar o conhecimento sobre mineração e geologia,
+            mostrando a importância dos minérios para a economia de
+            Minas Gerais.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="card__icon">
+            💡
+          </div>
+
+          <h4>
+            Conceito da Exposição
+          </h4>
+
+          <p>
+            Uma viagem pelo subsolo mineiro: da pedra ao produto.
+            Painéis, maquetes e amostras reais aproximam o visitante
+            da mineração.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="card__icon">
+            🔬
+          </div>
+
+          <h4>
+            Pontos Científicos
+          </h4>
+
+          <p>
+            A exposição aborda geologia, extração, cadeia produtiva
+            dos minérios e o papel de Minas Gerais no cenário nacional.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- AGENDA -->
+  <section id="agenda" class="section bg-light">
+
+    <div class="container">
+
+      <div class="section__header">
+
+        <span class="badge">
+          Programação
+        </span>
+
+        <h2>
+          Agenda e Cidades
+        </h2>
+
+        <p>
+          Confira as datas e locais onde a Exposição Minas das Minas
+          estará presente.
+        </p>
+
+      </div>
+
+
+      <div
+        class="agenda-grid"
+        id="agendaGrid"
+      ></div>
+
+
+      <div class="text-center mt-lg">
+
+        <button
+          type="button"
+          class="btn btn--red"
+          id="btnCidades"
+        >
+          Ver Todas as Cidades
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- GALERIA -->
+  <section id="galeria" class="section bg-white">
+
+    <div class="container">
+
+      <div class="section__header">
+
+        <span class="badge">
+          Acervo
+        </span>
+
+        <h2>
+          Galeria de Minérios
+        </h2>
+
+        <p>
+          Conheça parte do acervo da exposição.
+          Mais de 20 amostras reais de minérios.
+        </p>
+
+      </div>
+
+
+      <div
+        class="gallery-grid"
+        id="galleryGrid"
+      ></div>
+
+
+      <div class="text-center mt-lg">
+
+        <button
+          type="button"
+          class="btn btn--red"
+          id="btnGaleria"
+        >
+          Ver Galeria Completa
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SUSTENTABILIDADE -->
+  <section id="sustentabilidade" class="section bg-navy">
+
+    <div class="container">
+
+      <div class="section__header section__header--dark">
+
+        <span class="badge">
+          Meio Ambiente
+        </span>
+
+        <h2 class="text-white">
+          Sustentabilidade
+        </h2>
+
+        <p class="text-blue-light">
+          A mineração responsável é tema central da exposição.
+          Conheça boas práticas e ações de preservação ambiental.
+        </p>
+
+      </div>
+
+
+      <div class="sustent-grid">
+
+        <div class="sustent-card">
+          <div class="sustent-card__icon">🌿</div>
+          <h4>Recuperação de Áreas</h4>
+          <p>
+            Investimento em recuperação e revegetação das áreas
+            mineradas, restaurando o ecossistema local.
+          </p>
+        </div>
+
+        <div class="sustent-card">
+          <div class="sustent-card__icon">💧</div>
+          <h4>Gestão da Água</h4>
+          <p>
+            Sistemas de captação, tratamento e reuso da água
+            ajudam a reduzir o consumo.
+          </p>
+        </div>
+
+        <div class="sustent-card">
+          <div class="sustent-card__icon">♻️</div>
+          <h4>Economia Circular</h4>
+          <p>
+            Rejeitos da mineração podem ser reaproveitados em
+            diferentes processos.
+          </p>
+        </div>
+
+        <div class="sustent-card">
+          <div class="sustent-card__icon">🌍</div>
+          <h4>Biodiversidade</h4>
+          <p>
+            Programas de monitoramento e proteção da fauna
+            e flora nativa.
+          </p>
+        </div>
+
+        <div class="sustent-card">
+          <div class="sustent-card__icon">🔬</div>
+          <h4>Inovação Tecnológica</h4>
+          <p>
+            Tecnologia para tornar os processos mais eficientes
+            e reduzir impactos ambientais.
+          </p>
+        </div>
+
+        <div class="sustent-card">
+          <div class="sustent-card__icon">👥</div>
+          <h4>Comunidade</h4>
+          <p>
+            Projetos sociais, educação e geração de emprego
+            nas comunidades.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="text-center mt-lg">
+
+        <button
+          type="button"
+          class="btn btn--red"
+          id="btnSustentabilidade"
+        >
+          Saiba Mais
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTATO -->
+  <section id="contato" class="section bg-white">
+
+    <div class="container">
+
+      <div class="section__header">
+
+        <span class="badge">
+          Fale Conosco
+        </span>
+
+        <h2>
+          Contato / Escolas
+        </h2>
+
+        <p>
+          Quer agendar uma visita com sua escola ou turma?
+          Entre em contato.
+        </p>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+
+        <div class="contact-info">
+
+          <h3>
+            Informações para Escolas
+          </h3>
+
+          <ul class="contact-list">
+
+            <li>
+              <strong>Visitas gratuitas:</strong>
+              A entrada é gratuita para escolas públicas e privadas.
+            </li>
+
+            <li>
+              <strong>Agendamento:</strong>
+              Agende com antecedência para garantir o horário da turma.
+            </li>
+
+            <li>
+              <strong>Material didático:</strong>
+              Disponibilizamos material de apoio pedagógico.
+            </li>
+
+            <li>
+              <strong>Capacidade:</strong>
+              Atendemos grupos de até 30 alunos por vez.
+            </li>
+
+          </ul>
+
+
+          <div class="contact-details">
+
+            <a href="mailto:contato@minasdaminas.com.br">
+              ✉️ contato@minasdaminas.com.br
+            </a>
+
+            <a href="tel:+553133330000">
+              📞 (31) 3333-0000
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-form-wrap">
+
+          <form class="contact-form" id="contactForm">
+
+            <div class="form-row">
+
+              <div class="form-group">
+
+                <label for="nome">
+                  Nome *
+                </label>
+
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  required
+                  placeholder="Seu nome"
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="escola">
+                  Escola / Instituição
+                </label>
+
+                <input
+                  type="text"
+                  id="escola"
+                  name="escola"
+                  placeholder="Nome da escola"
+                >
+
+              </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+              <div class="form-group">
+
+                <label for="email">
+                  E-mail *
+                </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="seu@email.com"
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="cidade">
+                  Cidade
+                </label>
+
+                <input
+                  type="text"
+                  id="cidade"
+                  name="cidade"
+                  placeholder="Sua cidade"
+                >
+
+              </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="mensagem">
+                Mensagem *
+              </label>
+
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                required
+                placeholder="Descreva sua visita, quantidade de alunos, data desejada..."
+              ></textarea>
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="btn btn--red btn--full"
+            >
+              Enviar Mensagem
+            </button>
+
+          </form>
+
+
+          <div
+            class="form-success"
+            id="formSuccess"
+            hidden
+          >
+
+            <div class="form-success__icon">
+              ✅
+            </div>
+
+            <h3>
+              Mensagem Enviada!
+            </h3>
+
+            <p>
+              Sua mensagem foi registrada.
+              Entraremos em contato em breve.
+            </p>
+
+            <button
+              type="button"
+              class="btn btn--red"
+              id="btnNovaMensagem"
+            >
+              Enviar outra mensagem
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <div>
+
+          <div class="footer__brand">
+
+            <div class="navbar__logo">
+              MdM
+            </div>
+
+            <div>
+
+              <div class="footer__sub">
+                EXPOSIÇÃO
+              </div>
+
+              <div class="footer__name">
+                Minas das Minas
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <p class="footer__desc">
+            Uma exposição itinerante sobre mineração em Minas Gerais,
+            levando conhecimento e cultura para todo o estado.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h4 class="footer__heading">
+            Links Rápidos
+          </h4>
+
+          <ul class="footer__links">
+
+            <li>
+              <button onclick="scrollToSection('inicio')">
+                Início
+              </button>
+            </li>
+
+            <li>
+              <button onclick="scrollToSection('exposicao')">
+                A Exposição na Carreta
+              </button>
+            </li>
+
+            <li>
+              <button onclick="scrollToSection('agenda')">
+                Agenda e Cidades
+              </button>
+            </li>
+
+            <li>
+              <button onclick="scrollToSection('galeria')">
+                Galeria de Minérios
+              </button>
+            </li>
+
+            <li>
+              <button onclick="scrollToSection('contato')">
+                Contato/Escolas
+              </button>
+            </li>
+
+            <li>
+              <button onclick="scrollToSection('sustentabilidade')">
+                Sustentabilidade
+              </button>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h4 class="footer__heading">
+            Redes Sociais
+          </h4>
+
+          <div class="footer__social">
+
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-btn">
+              Instagram
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-btn">
+              Facebook
+            </a>
+
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="social-btn">
+              YouTube
+            </a>
+
+          </div>
+
+          <p class="footer__realizacao">
+            Realização: FIEMG · SESI · Kinross · Codemig
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer__copy">
+        © 2025 Exposição Minas das Minas.
+        Todos os direitos reservados.
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
